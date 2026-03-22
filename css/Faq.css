@@ -1,0 +1,123 @@
+/* --- FONDO GENERAL --- */
+body { background-color: #f4f7f9; }
+
+/* --- HERO --- */
+.faq-hero {
+    text-align: center;
+    padding: 60px 20px 30px;
+}
+
+.faq-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    color: #00334e;
+    margin-bottom: 10px;
+}
+
+.faq-hero p { color: #888; font-size: 1rem; }
+
+/* --- SECCIÓN FAQ --- */
+.faq-section { padding: 20px 20px 60px; }
+
+.faq-container {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* --- ITEM --- */
+.faq-item {
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+    overflow: hidden;
+}
+
+/* --- DETAILS / SUMMARY --- */
+details { padding: 0; }
+
+summary {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: #00334e;
+    font-weight: 600;
+    padding: 20px 25px;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+summary::-webkit-details-marker { display: none; }
+
+summary::after {
+    content: '›';
+    font-size: 1.4rem;
+    color: #2ab7ca;
+    transition: transform 0.3s;
+    flex-shrink: 0;
+}
+
+details[open] summary::after { transform: rotate(90deg); }
+details[open] summary { color: #2ab7ca; }
+
+details p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.7;
+    padding: 0 25px 20px;
+}
+
+/* --- CTA --- */
+.faq-cta {
+    background: #e8f4f7;
+    border: 1px solid #d0e8ef;
+    border-radius: 15px;
+    max-width: 700px;
+    margin: 0 auto 80px;
+    padding: 40px;
+    text-align: center;
+}
+
+.faq-cta h2 {
+    font-family: 'Playfair Display', serif;
+    color: #00334e;
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+}
+
+.faq-cta p { color: #666; font-size: 14px; margin-bottom: 20px; }
+
+.btn-faq {
+    display: inline-block;
+    background: linear-gradient(to right, #0e7190, #2ab7ca);
+    color: white !important;
+    padding: 12px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: opacity 0.2s;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+}
+
+
+.btn-faq:hover { opacity: 0.9; }
+
+/* --- MÓVIL --- */
+@media (max-width: 768px) {
+    .faq-container { padding: 0 5px; }
+    .faq-cta { margin: 0 10px 60px; }
+}

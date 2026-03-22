@@ -1,0 +1,393 @@
+/* --- ESTILOS GLOBALES DE TEXTO --- */
+.itinerario h2 {
+    color: #1a365d !important;
+    opacity: 1 !important;
+    text-align: center;
+    display: flex; justify-content: center;
+    align-items: center; gap: 10px;
+    margin-bottom: 40px; font-weight: bold;
+}
+
+.itinerario h3,
+.ruta-detalles h2,
+.tabla-precios h3 {
+    color: #1a365d !important;
+    opacity: 1 !important;
+    font-weight: bold !important;
+}
+
+.itinerario p,
+.info-texto p {
+    color: #4a5568 !important;
+    line-height: 1.6;
+}
+
+/* --- SECCIÓN BANNER --- */
+.banner-ruta {
+    position: relative;
+    height: 500px;
+    background-color: #1a365d; background-size: cover; background-position: center;
+    display: flex;
+    align-items: center; justify-content: center;
+    overflow: hidden;
+}
+
+.banner-overlay {
+    position: absolute;
+    width: 100%; height: 100%; background: rgba(0, 0, 0, 0.4);
+    font-size: large;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+    text-align: center; color: white;
+    font-family: 'Times New Roman', Times, serif; font-size: xx-large;
+}
+
+.banner-content h1 {
+    font-size: 65px;
+    font-weight: bold !important;
+    margin: 0;
+}
+
+/* --- BARRA DE OFERTA --- */
+.promo-bar {
+    background: #f15a24;
+    color: white; text-align: center;
+    padding: 15px 0; font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* --- LAYOUT DE DETALLES --- */
+.ruta-detalles {
+    background-color: #f4f7f9;
+    padding: 60px 40px;
+}
+
+.ruta-detalles-inner {
+    display: flex;
+    align-items: flex-start; justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px; margin: 0 auto;
+}
+
+/* --- SECCIÓN RESEÑAS --- */
+.resenas-ruta {
+    background-color: #ffffff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.resenas-ruta h2 {
+    color: #1a365d;
+    font-family: serif; font-size: 32px; font-weight: bold !important;
+    margin-bottom: 40px;
+}
+
+.resenas-grid {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 40px;
+    display: flex; justify-content: center;
+    gap: 60px;
+    flex-wrap: nowrap; align-items: flex-start;
+}
+
+.resena-card {
+    background: white;
+    border-radius: 15px; padding: 35px;
+    flex: 1;
+    min-width: 300px; max-width: 450px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border: 1px solid #f0f0f0; text-align: left;
+}
+
+.resena-card .estrellas {
+    color: #f1c40f;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.resena-card p {
+    color: #4a5568;
+    font-style: italic; font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.resena-card strong {
+    color: #1a365d;
+    font-weight: bold !important;
+}
+
+.resena-card span {
+    color: #a0aec0;
+    font-size: 14px;
+}
+
+.info-texto {
+    flex: 2;
+    min-width: 320px;
+}
+
+/* --- TABLA DE PRECIOS --- */
+.tabla-precios {
+    background: white;
+    padding: 40px;
+    border-radius: 20px; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border: 1px solid #f0f0f0;
+    margin: 0; width: 420px;
+    flex-shrink: 0;
+}
+
+.tabla-precios h3 {
+    margin-top: 0; margin-bottom: 25px;
+    font-size: 22px;
+    font-family: serif;
+}
+
+.tabla-precios h3 span,
+.precio-icono {
+    color: #0e7190;
+}
+
+.precio-fila {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #e8e8e8; color: #4a5568; font-size: 16px;
+}
+
+.precio-fila:last-of-type {
+    border-bottom: none;
+}
+
+.precio-fila strong {
+    color: #1a202c;
+    font-size: 18px;
+}
+
+.nota {
+    font-size: 12px;
+    color: #718096;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.btn-reservar-wa {
+    display: block;
+    width: 100%;
+    margin-top: 20px; padding: 16px 0;
+    background: linear-gradient(to right, #0e7190, #0084ad);
+    color: white !important; text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold; font-size: 16px; box-sizing: border-box;
+    transition: opacity 0.2s;
+}
+
+.btn-reservar-wa:hover {
+    opacity: 0.9;
+}
+
+/* --- CONTENEDOR DE ITINERARIO TARJETAS --- */
+.itinerario {
+    background-color: #eef1f3;
+    padding: 80px 20px;
+}
+
+.itinerario-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dia-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    gap: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    align-items: flex-start;
+    transition: all 0.3s ease;
+}
+
+.dia-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.dia-numero {
+    background: #0084ad;
+    color: white !important;
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center; justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.dia-info h3 {
+    margin: 0 0 12px 0;
+    font-size: 20px;
+}
+
+.tags {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tags span {
+    background: #edf2f7;
+    color: #2d3748 !important;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    border: 1px solid #e2e8f0;
+}
+
+/* --- SECCIÓN CTA FINAL --- */
+.cta-final {
+    background: linear-gradient(to right, #f15a24, #ff922b);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.btn-cta-white {
+    background: white;
+    color: #f15a24 !important;
+    padding: 16px 35px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.btn-cta-white:hover {
+    transform: scale(1.05);
+}
+
+/* --- FOOTER --- */
+.footer-tropical {
+    background: #0e7190 !important;
+    color: white !important;
+    padding: 25px 20px 15px !important;
+    text-align: center !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-grid {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 20px;
+}
+
+.footer-brand h3 {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.footer-links a {
+    display: block;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    margin-bottom: 6px;
+}
+
+.footer-brand p {
+    font-size: 14px;
+    opacity: 0.9;
+    max-width: 500px;
+    margin: 0 auto 15px;
+}
+
+.footer-group {
+    margin-bottom: 15px;
+}
+
+.footer-group h4 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.footer-group a {
+    display: block;
+    color: white !important;
+    text-decoration: none;
+    margin-bottom: 6px;
+    opacity: 0.8;
+    font-size: 14px;
+}
+
+/* --- BOTÓN WHATSAPP NARANJA --- */
+.footer-cta {
+    margin: 15px 0;
+}
+
+.btn-wa-naranja {
+    background-color: #ffb35c !important;
+    color: white !important;
+    padding: 12px 35px;
+    border-radius: 12px;
+    text-decoration: none !important;
+    font-weight: bold;
+    font-size: 16px;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.btn-wa-naranja:hover {
+    transform: scale(1.05);
+}
+
+/* Línea final de Copyright */
+.footer-copy {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 13px;
+    opacity: 0.7;
+    width: 100%;
+}
+
+/* --- MEDIA QUERY: MÓVIL --- */
+@media (max-width: 768px) {
+    .stats-bar,
+    .cards-container,
+    .testimonials-container,
+    .footer-grid {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        gap: 40px;
+    }
+
+    .ruta-detalles {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .tabla-precios {
+        min-width: unset;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .resena-card {
+        min-width: 100%;
+    }
+}

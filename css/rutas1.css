@@ -1,0 +1,165 @@
+/* --- VARIABLES GLOBALES --- */
+:root {
+    --bg-principal: #f4f7f9;
+    --azul-oscuro: #00334e;
+    --naranja-acento: #ff7043;
+    --blanco: #ffffff;
+    --texto-cuerpo: #4a5568;
+}
+
+/* --- RESET Y BASE --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-principal); /* Color unificado */
+    color: var(--texto-cuerpo);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* --- NAVEGACIÓN --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: var(--blanco);
+    width: 100%;
+    z-index: 10;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--azul-oscuro);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #555;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: var(--naranja-acento);
+}
+
+/* --- SECCIONES DE CABECERA --- */
+.rutas-hero {
+    background-color: var(--bg-principal);
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.rutas-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    color: var(--azul-oscuro);
+    margin-bottom: 15px;
+}
+
+/* --- LISTADO DE RUTAS (CARDS) --- */
+.rutas-lista {
+    background-color: var(--bg-principal);
+    padding: 20px 10% 80px;
+}
+
+.cards-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: var(--blanco);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 51, 78, 0.05);
+    flex: 1 1 300px;
+    max-width: 400px;
+    transition: transform 0.3s;
+    border: 1px solid #e2e8f0;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.ruta-badge {
+    display: inline-block;
+    background-color: var(--naranja-acento);
+    color: var(--blanco);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.ruta-link {
+    color: var(--naranja-acento);
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+/* --- ITINERARIO Y DETALLES --- */
+.itinerario {
+    background-color: var(--bg-principal);
+    padding: 60px 20px;
+}
+
+.dia-card {
+    background-color: var(--blanco);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* --- FOOTER --- */
+.footer {
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+    padding: 60px 10% 20px;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* --- MEDIA QUERIES --- */
+@media (max-width: 768px) {
+    .navbar ul { display: none; }
+    .cards-container { flex-direction: column; align-items: center; }
+    .card { width: 100%; }
+}
