@@ -78,6 +78,7 @@
         <!-- Formulario -->
         <div class="contacto-formulario">
             <h2>Envíanos un mensaje</h2>
+            <form name="contacto" method="POST" data-netlify="true">
 
             <div class="form-group">
                 <label>Nombre</label>
@@ -92,6 +93,7 @@
             <div class="form-group">
                 <label>Ruta de interés</label>
                 <select>
+                    <option value="" disabled selected>Selecciona una ruta</option>
                     <option>Caribe Occidental</option>
                     <option>Caribe Exótico</option>
                     <option>Caribe Esencial</option>
@@ -103,7 +105,11 @@
                 <textarea id="mensaje" rows="5" placeholder="Escribe tu consulta aquí..."></textarea>
             </div>
 
-            <button class="btn-enviar">Enviar mensaje</button>
+            <div class="form-group">
+                <button type="submit" class="btn-enviar">Enviar mensaje</button>
+            </div>
+
+            </form>
         </div>
 
     </section>
