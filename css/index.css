@@ -332,10 +332,72 @@ body {
     text-align: center
 }
 
-@media (max-width:768px) {
-    .navbar ul {
-        display: none
+/* --- Estilos base para PC (asegúrate de que el checkbox no se vea) --- */
+#btn-menu {
+    display: none;
+}
+
+.icon-menu {
+    display: none; /* Escondido en escritorio */
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.icon-menu span {
+    width: 30px;
+    height: 3px;
+    background: #008C9E; /* El azul de tu logo */
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+/* --- MODO MÓVIL (Menos de 768px) --- */
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 10px 20px;
     }
+
+    .icon-menu {
+        display: flex; /* Aparecen las rayitas */
+    }
+
+    /* Escondemos el menú original y lo posicionamos */
+    .menu {
+        position: absolute;
+        top: 100%; /* Justo debajo del header */
+        left: 0;
+        width: 100%;
+        background: #fff;
+        max-height: 0; /* Altura 0 para que no se vea */
+        overflow: hidden;
+        transition: all 0.4s ease;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .menu ul {
+        flex-direction: column; /* Lista vertical */
+        padding: 20px;
+        list-style: none;
+    }
+
+    .menu ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    /* EL TRUCO: Cuando el checkbox esté marcado, el menú crece */
+    #btn-menu:checked ~ .menu {
+        max-height: 500px; /* Altura suficiente para ver los links */
+    }
+
+    /* Opcional: Transforma las rayitas en una X cuando esté abierto */
+    #btn-menu:checked ~ .icon-menu span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    #btn-menu:checked ~ .icon-menu span:nth-child(2) { opacity: 0; }
+    #btn-menu:checked ~ .icon-menu span:nth-child(3) { transform: rotate(-45deg) translate(6px, -7px); }
+}
+
 
     .hero-content h1 {
         font-size: 2.5rem
@@ -383,7 +445,6 @@ body {
         max-width: 300px;
         margin-top: 20px
     }
-}
 
 .blog-preview {
     background-color: #f4f7f9;
