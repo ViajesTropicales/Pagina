@@ -92,7 +92,7 @@ body {
 .stat-item p { font-size: 0.9rem; color: #888; }
 
 /* --- RUTAS --- */
-.rutas { padding: 80px 10%; text-align: center; background: #f9fbfd; }
+.rutas { padding: 80px 10%; text-align: center; background: #e5e5e5d2; }
 .rutas h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 10px; color: #00334e; }
 .subtitle { color: #666; margin-bottom: 50px; }
 
