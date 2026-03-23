@@ -70,7 +70,7 @@ body {
 }
 
 .btn-primary { background-color: #2ab7ca; color: white; }
-.btn-secondary { background-color: #fdb85d; color: white; }
+.btn-secondary { background-color: #ff7043; color: white; }
 
 .btn-primary:hover, .btn-secondary:hover { transform: translateY(-3px); filter: brightness(1.1); }
 
@@ -225,10 +225,12 @@ body {
 
 .btn-blog:hover { opacity: 0.9; }
 
-/* --- LOGO IMG --- */
-.logo img {
-    height: 40px;
-    width: auto;
+#btn-menu {
+    display: none;
+}
+
+.icon-menu {
+    display: none; /* También escondemos el icono en PC para que no estorbe */
 }
 
 /* --- CARD ENLAZABLE --- */
