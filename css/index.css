@@ -183,13 +183,11 @@ body {
         text-align: center !important;
         gap: 40px;
     }
-
     .card, .test-card { width: 100% !important; max-width: 450px; margin: 0 auto; }
     .card-body { text-align: center !important; }
     .footer { padding: 50px 5% !important; }
     .footer .btn-secondary { width: 100% !important; max-width: 300px; margin-top: 20px; }
 }
-
 /* --- BLOG PREVIEW --- */
 .blog-preview {
     background-color: #e5e5e5d2;
@@ -197,41 +195,19 @@ body {
     text-align: center;
     color: #333;
 }
-
 .blog-preview h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    color: #00334e;
-    margin-bottom: 15px;
-}
+    font-family: 'Playfair Display', serif; font-size: 2.5rem; color: #00334e;margin-bottom: 15px;}
 
-.blog-preview p {
-    color: #666;
-    font-size: 1rem;
-    margin-bottom: 30px;
-}
-
+.blog-preview p {color: #666; font-size: 1rem; margin-bottom: 30px;}
 .btn-blog {
     display: inline-block;
-    background: linear-gradient(to right, #0e7190, #2ab7ca);
-    color: white !important;
-    padding: 14px 35px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 15px;
-    transition: opacity 0.2s;
-}
-
+    background: linear-gradient(to right, #0e7190, #2ab7ca); color: white !important; padding: 14px 35px; border-radius: 30px; text-decoration: none; font-weight: 600; font-size: 15px; transition: opacity 0.2s;}
 .btn-blog:hover { opacity: 0.9; }
-
 #btn-menu {
     display: none;
 }
-
 .icon-menu {
     display: none; /* También escondemos el icono en PC para que no estorbe */
 }
-
 /* --- CARD ENLAZABLE --- */
 a.card { text-decoration: none; color: inherit; display: block; }
