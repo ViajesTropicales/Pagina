@@ -131,7 +131,6 @@ body {
     background-color: var(--bg-principal);
     padding: 60px 20px;
 }
-
 .dia-card {
     background-color: var(--blanco);
     border-radius: 15px;
@@ -141,7 +140,6 @@ body {
     gap: 20px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
-
 /* --- FOOTER --- */
 .footer {
     background-color: var(--azul-oscuro);
@@ -156,10 +154,27 @@ body {
     display: block;
     margin-bottom: 8px;
 }
-
-/* --- MEDIA QUERIES --- */
+/* --- MEDIA QUERY: MÓVIL (Corregida) --- */
 @media (max-width: 768px) {
-    .navbar ul { display: none; }
-    .cards-container { flex-direction: column; align-items: center; }
-    .card { width: 100%; }
+    /* 1. Ajustes de Navegación */
+    .navbar { position: relative; padding: 15px 5%; }
+    .navbar ul { display: none; } /* Aquí podrías añadir un menú hamburguesa luego */
+    /* 2. Hero Section */
+    .hero-content h1 { font-size: 2.2rem; }
+    .hero-buttons { flex-direction: column; gap: 15px; align-items: center; }
+    .btn-primary, .btn-secondary { width: 100%; max-width: 300px; text-align: center; }
+    /* 3. Secciones Flex: Aquí evitamos que se vea "compacto" */
+    .stats-bar, 
+    .cards-container, 
+    .testimonials-container, 
+    .footer-grid { flex-direction: column !important; align-items: center !important; text-align: center !important; gap: 50px !important; padding: 40px 5% !important;}
+    /* 4. Tarjetas: Para que no se aplasten y se vea el precio */
+    .card, .test-card {width: 100% !important; max-width: 400px; margin: 0 auto; height: auto !important; }
+    .card img { height: 250px; } /* Imagen más grande en móvil para que luzca */
+    .card-body { text-align: center !important; padding: 30px 20px !important; }
+    /* 5. Footer: Solución al botón desplazado y alineación */
+    .footer { padding: 60px 5% !important; }
+    .footer-grid {display: flex !important; flex-direction: column !important; gap: 40px !important; }
+    .footer-info, .footer-links { width: 100%;align-self: center !important; }
+    .footer .btn-secondary { display: block !important; width: 100% !important;  max-width: 280px;  margin: 20px auto 0 !important;  padding: 15px; font-size: 16px;}
 }
