@@ -60,19 +60,29 @@ body {font-family: 'Poppins', sans-serif; color: #fff; line-height: 1.6; overflo
 .footer-links h4 { font-size: 16px; margin-bottom: 15px; font-weight: bold; }
 .footer-links a { display: block; color: rgba(255,255,255,0.8); text-decoration: none; margin-bottom: 10px; font-size: 14px; }
 .footer-bottom { margin-top: 20px; font-size: 13px; opacity: 0.7; text-align: center; }
-/* --- MEDIA QUERY: MÓVIL --- */
+/* --- MEDIA QUERY: MÓVIL (Corregida) --- */
 @media (max-width: 768px) {
-    .navbar ul { display: none; }
-    .hero-content h1 { font-size: 2.5rem; }
-    .hero-buttons { flex-direction: column; }
-    h1 { font-size: 2.2rem !important; }
-    h2 { font-size: 1.8rem !important; }
-    .stats-bar, .cards-container, .testimonials-container, .footer-grid {
-    flex-direction: column !important;align-items: center !important; text-align: center !important; gap: 40px;}
-    .card, .test-card { width: 100% !important; max-width: 450px; margin: 0 auto; }
-    .card-body { text-align: center !important; }
-    .footer { padding: 50px 5% !important; }
-    .footer .btn-secondary { width: 100% !important; max-width: 300px; margin-top: 20px; }
+    /* 1. Ajustes de Navegación */
+    .navbar { position: relative; padding: 15px 5%; }
+    .navbar ul { display: none; } /* Aquí podrías añadir un menú hamburguesa luego */
+    /* 2. Hero Section */
+    .hero-content h1 { font-size: 2.2rem; }
+    .hero-buttons { flex-direction: column; gap: 15px; align-items: center; }
+    .btn-primary, .btn-secondary { width: 100%; max-width: 300px; text-align: center; }
+    /* 3. Secciones Flex: Aquí evitamos que se vea "compacto" */
+    .stats-bar, 
+    .cards-container, 
+    .testimonials-container, 
+    .footer-grid { flex-direction: column !important; align-items: center !important; text-align: center !important; gap: 50px !important; padding: 40px 5% !important;}
+    /* 4. Tarjetas: Para que no se aplasten y se vea el precio */
+    .card, .test-card {width: 100% !important; max-width: 400px; margin: 0 auto; height: auto !important; }
+    .card img { height: 250px; } /* Imagen más grande en móvil para que luzca */
+    .card-body { text-align: center !important; padding: 30px 20px !important; }
+    /* 5. Footer: Solución al botón desplazado y alineación */
+    .footer { padding: 60px 5% !important; }
+    .footer-grid {display: flex !important; flex-direction: column !important; gap: 40px !important; }
+    .footer-info, .footer-links { width: 100%;align-self: center !important; }
+    .footer .btn-secondary { display: block !important; width: 100% !important;  max-width: 280px;  margin: 20px auto 0 !important;  padding: 15px; font-size: 16px;}
 }
 /* --- BLOG PREVIEW --- */
 .blog-preview {background-color: #e5e5e5d2; padding: 80px 20px; text-align: center; color: #333; }
