@@ -2,54 +2,93 @@
    ARCHIVO ÚNICO DE RESPONSIVE
    Este código arregla TODA la web en móviles
    ============================================= */
+
 @media (max-width: 768px) {
     
-    /* --- 1. AJUSTES GLOBALES --- */
-    .navbar ul { display: none; } /* Oculta menú de PC */
+    /* --- 1. AJUSTES GLOBALES Y CONTENEDORES --- */
+    /* Quitamos el menú antiguo y forzamos columnas en toda la web */
+    .navbar ul:not(.nav-list), 
+    nav > ul:not(.nav-list) { display: none !important; } 
+
     .stats-bar, 
     .cards-container, 
     .testimonials-container, 
     .footer-grid,
-    .ruta-detalle-container { flex-direction: column !important; align-items: center !important; text-align: center !important; gap: 45px !important; padding: 40px 5% !important; width: 100% !important;
+    .ruta-detalles-inner, /* Para las páginas de cada ruta */
+    .itinerario-container,
+    .resenas-grid { 
+        display: flex !important;
+        flex-direction: column !important; 
+        align-items: center !important; 
+        text-align: center !important; 
+        gap: 30px !important; 
+        padding: 30px 5% !important; 
+        width: 100% !important;
     }
 
-    /* --- 2. TARJETAS (Página Rutas y Home) --- */
-    .card, .test-card, .precios-card {
-        width: 100% !important; max-width: 420px !important;
-        margin: 0 auto !important; position: static !important; height: auto !important; flex: none !important;}
-    .card img { height: 250px !important;}
-    /* --- 3. BOTONES Y TEXTOS --- */
-    h1 { font-size: 2.2rem !important; }
-    h2 { font-size: 1.8rem !important; }
-    .hero-buttons { flex-direction: column; gap: 15px; }
-    /* --- 4. FOOTER (Arreglo del botón naranja) --- */
-    .footer-info, .footer-links {  width: 100% !important; margin-bottom: 20px;}
-    .footer .btn-secondary { display: block !important; width: 100% !important; max-width: 280px; margin: 20px auto 0 !important;}
-    /* Estilo para las barritas del menú hamburguesa */
+    /* --- 2. EL MENÚ HAMBURGUESA (Funcionalidad) --- */
     .menu-toggle {
-        display: block;
+        display: block !important;
         cursor: pointer;
+        padding: 10px;
     }
+
     .bar {
         display: block;
         width: 25px;
         height: 3px;
         margin: 5px auto;
-        background-color: #00334e; /* El color de tu logo */
+        background-color: #00334e;
         transition: 0.3s;
     }
 
-    /* Escondemos el menú normal y lo preparamos para el despliegue */
     .nav-list {
-        display: none; /* Se esconde por defecto */
+        display: none; /* Escondido por defecto */
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 70px; /* Debajo de la barra de navegación */
+        top: 60px; 
         left: 0;
-        background-color: #fff;
+        background-color: #ffffff;
         text-align: center;
         padding: 20px 0;
         box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+
+    /* Esta clase la activa el JavaScript */
+    .nav-list.active {
+        display: flex !important;
+    }
+
+    /* --- 3. TARJETAS E ITINERARIOS --- */
+    .card, .test-card, .dia-card, .resena-card, .tabla-precios {
+        width: 100% !important; 
+        max-width: 100% !important;
+        margin: 0 auto 15px !important; 
+        position: static !important; 
+        height: auto !important;
+    }
+
+    .info-texto { width: 100% !important; }
+
+    /* --- 4. TEXTOS Y BOTONES --- */
+    h1 { font-size: 1.8rem !important; }
+    h2 { font-size: 1.5rem !important; }
+    
+    .hero-buttons, .banner-content { 
+        display: flex;
+        flex-direction: column; 
+        gap: 15px; 
+        padding: 0 10px;
+    }
+
+    /* --- 5. FOOTER --- */
+    .footer-info, .footer-links { width: 100% !important; margin-bottom: 20px; }
+    .footer .btn-secondary { 
+        display: block !important; 
+        width: 90% !important; 
+        max-width: 280px; 
+        margin: 20px auto 0 !important;
     }
 }
