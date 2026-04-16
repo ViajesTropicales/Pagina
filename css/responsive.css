@@ -94,17 +94,17 @@
         margin: 0 auto !important;
     }
 
-    .info-texto {
-        width: 100% !important;
-    }
+    .info-texto {width: 100% !important; }
 
     /* --- 4. TEXTOS Y BOTONES --- */
-    h1 {
-        font-size: 1.8rem !important;
-    }
+    h1 { font-size: 1.8rem !important;}
+    h2 { font-size: 1.1rem !important;}
 
-    h2 {
-        font-size: 1.5rem !important;
+    /* Esto selecciona los párrafos dentro de las tarjetas */
+    .card-body p, .card p {
+        font-size: 0.85rem !important; /* Ajusta este número a tu gusto */
+        line-height: 1.4 !important;   /* Mejora la lectura en pantallas pequeñas */
+        margin-bottom: 10px !important;
     }
 
     .hero-buttons,
