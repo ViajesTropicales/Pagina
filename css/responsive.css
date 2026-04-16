@@ -78,44 +78,20 @@
     .card,
     .resena-card,
     .dia-card {
-        width: 90% !important;
-        /* Para que no toquen los bordes del móvil */
-        max-width: 400px !important;
-        margin: 0 auto !important;
-    }
+        width: 90% !important;  max-width: 400px !important; margin: 0 auto !important;}
 
-    .info-texto {
-        width: 100% !important;
-    }
+    .info-texto { width: 100% !important;}
 
     /* --- 4. TEXTOS Y BOTONES --- */
-    h1 {
-        font-size: 1.8rem !important;
-    }
-
-    h2 {
-        font-size: 1.5rem !important;
-    }
+    h1 { font-size: 1.8rem !important;}
+    h2 {font-size: 1.5rem !important;}
 
     .hero-buttons,
-    .banner-content {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        padding: 0 10px;
-    }
+    .banner-content { display: flex; flex-direction: column; gap: 15px; padding: 0 10px; }
 
     /* --- 5. FOOTER --- */
     .footer-info,
-    .footer-links {
-        width: 100% !important;
-        margin-bottom: 20px;
-    }
+    .footer-links { width: 100% !important; margin-bottom: 20px; }
 
-    .footer .btn-secondary {
-        display: block !important;
-        width: 90% !important;
-        max-width: 280px;
-        margin: 20px auto 0 !important;
-    }
+    .footer .btn-secondary { display: block !important; width: 90% !important; max-width: 280px; margin: 20px auto 0 !important; }
 }
