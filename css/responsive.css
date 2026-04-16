@@ -25,4 +25,31 @@
     /* --- 4. FOOTER (Arreglo del botón naranja) --- */
     .footer-info, .footer-links {  width: 100% !important; margin-bottom: 20px;}
     .footer .btn-secondary { display: block !important; width: 100% !important; max-width: 280px; margin: 20px auto 0 !important;}
+    /* Estilo para las barritas del menú hamburguesa */
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: #00334e; /* El color de tu logo */
+        transition: 0.3s;
+    }
+
+    /* Escondemos el menú normal y lo preparamos para el despliegue */
+    .nav-list {
+        display: none; /* Se esconde por defecto */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px; /* Debajo de la barra de navegación */
+        left: 0;
+        background-color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
 }

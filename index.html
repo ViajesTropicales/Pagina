@@ -13,7 +13,6 @@
     <title>ViajesTropicales | Especialistas en Cruceros de Lujo por el Caribe</title>
     <!-- SECCIÓN DEL LOGOTIPO -->
     <link rel="icon" type="image/png" href="/img/logo.webp">
-    <link rel="stylesheet" href="../css/responsive.css">
     <meta name="description" content="ViajesTropicales: Tu pasaporte al lujo caribeño.
     Descubre rutas exclusivas, camarotes de alta gama y experiencias inolvidables en aguas cristalinas. 
     ¡Reserva tu crucero soñado hoy!">
@@ -27,7 +26,7 @@
     <meta name="twitter:image" content="https://viajestropicales.netlify.app/img/seo-portada-viajes.jpg">
     <meta property="og:url" content="https://viajestropicales.netlify.app/">
     <meta property="og:type" content="website">
-    
+
     <!-- Schema -->
     <script type="application/ld+json">
     {
@@ -46,6 +45,7 @@
     </script>
 
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="../css/responsive.css">
     <link rel="canonical" href="https://viajestropicales.netlify.app/">
     <link rel="preload" as="image" href="/img/banner-crucero-lujo-caribe.webp" fetchpriority="high">
 </head>
@@ -55,13 +55,18 @@
         <div class="logo">
             <span class="anchor-icon">⚓</span> ViajesTropicales
         </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
         <nav>
-            <ul>
+            <ul class="nav-list">
                 <li><a href="/index.html">Inicio</a></li>
-                <li><a href="paginas/rutas.html">Rutas</a></li>
+                <li><a href="/paginas/rutas.html">Rutas</a></li>
                 <li><a href="/paginas/Blog.html">Blog</a></li>
                 <li><a href="/paginas/QuienesSomos.html">Quiénes Somos</a></li>
-                <li><a href="paginas/Contacto.html">Contacto</a></li>
+                <li><a href="/paginas/Contacto.html">Contacto</a></li>
                 <li><a href="/paginas/Faq.html">FAQ</a></li>
                 <li><a href="mailto:info@viajestropicales.com" class="btn-whatsapp-nav">Escríbenos</a></li>
             </ul>
@@ -208,6 +213,7 @@
             <p>© 2026 ViajesTropicales. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
