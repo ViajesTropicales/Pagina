@@ -113,11 +113,4 @@ details p {
     white-space: nowrap;
 }
 
-
 .btn-faq:hover { opacity: 0.9; }
-
-/* --- MÓVIL --- */
-@media (max-width: 768px) {
-    .faq-container { padding: 0 5px; }
-    .faq-cta { margin: 0 10px 60px; }
-}

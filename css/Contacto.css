@@ -33,8 +33,3 @@ body { background-color: #e5e5e5d2;}
     width: 100%;padding: 14px; background: linear-gradient(to right, #0e7190, #2ab7ca); color: white;border: none; border-radius: 10px;font-size: 15px;
     font-weight: 600;cursor: pointer;transition: opacity 0.2s; font-family: 'Poppins', sans-serif; margin-top: 5px;}
 .btn-enviar:hover { opacity: 0.9;}
-
-/* --- MEDIA QUERY: MÓVIL --- */
-@media (max-width: 768px) {
-    .contacto-main { flex-direction: column; padding: 0 5% 60px;}
-}

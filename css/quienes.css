@@ -172,24 +172,3 @@ body {
     font-size: 14px;
     line-height: 1.6;
 }
-
-/* --- MEDIA QUERY: MÓVIL --- */
-@media (max-width: 768px) {
-    .valores-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .quienes-stats {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .equipo-grid {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .quienes-main {
-        padding: 20px 5% 60px;
-    }
-}
