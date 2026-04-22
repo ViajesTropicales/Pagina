@@ -1,7 +1,7 @@
 /* --- FONDO GENERAL --- */
 body { background-color: #e5e5e5d2;}
 /* --- HERO --- */
-.contacto-hero { text-align: center; padding: 60px 20px 40px;}
+.contacto-hero { text-align: center; padding: 120px 20px 40px;}
 .contacto-hero h1 { font-family: 'Playfair Display', serif; font-size: 2.8rem; color: #00334e;margin-bottom: 10px;}
 .contacto-hero p { color: #666; font-size: 1rem;}
 /* --- LAYOUT PRINCIPAL --- */
