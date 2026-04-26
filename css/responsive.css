@@ -6,9 +6,7 @@
 @media (max-width: 768px) {
 
     /* --- MENÚ ANTIGUO --- */
-    .navbar ul:not(.nav-list),
-    nav>ul:not(.nav-list) { display: none !important; }
-
+    .navbar ul {display: none !important;}
     /* --- STATS 2 EN 2 --- */
     .stats-bar { flex-wrap: wrap !important; flex-direction: row !important; }
     .stat-item { flex: 1 1 45% !important; margin-bottom: 30px; } /* ← tenías .stats-item con s, error */
