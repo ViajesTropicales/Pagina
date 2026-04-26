@@ -6,7 +6,7 @@ menu.addEventListener('click', function() {
     menuLinks.classList.toggle('active');
 });
 
-// ✅ Espacio entre .nav-list y li
+
 document.querySelectorAll('.nav-list li a').forEach(link => {
     link.addEventListener('click', () => {
         menu.classList.remove('is-active');
