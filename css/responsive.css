@@ -52,6 +52,11 @@
     /* SUBIR TITULO POR PADDING*/
     .rutas-hero { padding-top: 100px !important;}
 
+        /* --- CONTACTO ---*/
+    .contacto-main { flex-direction: column !important; padding: 0 15px 50px !important;}
+    .contacto-info { width: 100% !important;}
+    .contacto-formulario { width: 100% !important; padding: 25px !important;}
+
     /* --- TEXTOS --- */
     h1 { font-size: 1.8rem !important; }
     h2 { font-size: 1.1rem !important; }
