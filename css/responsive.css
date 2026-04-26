@@ -52,6 +52,8 @@
     .banner-content h1 { font-size: 3.3rem !important; }
     .banner-content p { font-size: 1.3rem !important; }
     .ruta-detalles h2 { font-size: 1.4rem !important; }
+    .dia-info p { font-size: 0.8rem !important; }
+    
     /* --- BOTONES --- */
     .hero-buttons,
     .banner-content { display: flex; flex-direction: column; gap: 15px; padding: 0 10px; }

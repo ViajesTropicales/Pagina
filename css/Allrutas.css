@@ -40,22 +40,11 @@
 /* --- CONTENEDOR DE ITINERARIO TARJETAS --- */
 .itinerario { background-color: #eef1f3; padding: 80px 20px;}
 .itinerario-container { max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px;}
-.dia-card {
-    background: white;
-    border-radius: 15px;
-    padding: 30px;
-    display: flex;
-    gap: 25px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    align-items: flex-start;
-    transition: all 0.3s ease;
-}
+.dia-card {background: white;
+    border-radius: 15px;padding: 30px;display: flex; gap: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); align-items: flex-start; transition: all 0.3s ease;}
 
-.dia-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-}
-
+.dia-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);}
 .dia-numero {
     background: #0084ad;
     color: white !important;
@@ -111,90 +100,4 @@
 
 .btn-cta-white:hover {
     transform: scale(1.05);
-}
-
-/* --- FOOTER --- */
-.footer-tropical {
-    background: #0e7190 !important;
-    color: white !important;
-    padding: 25px 20px 15px !important;
-    text-align: center !important;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footer-grid {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    padding-bottom: 20px;
-}
-
-.footer-brand h3 {
-    font-size: 20px;
-    margin-bottom: 6px;
-}
-
-.footer-links a {
-    display: block;
-    color: rgba(255, 255, 255, 0.8);
-    text-decoration: none;
-    margin-bottom: 6px;
-}
-
-.footer-brand p {
-    font-size: 14px;
-    opacity: 0.9;
-    max-width: 500px;
-    margin: 0 auto 15px;
-}
-
-.footer-group {
-    margin-bottom: 15px;
-}
-
-.footer-group h4 {
-    font-size: 16px;
-    margin-bottom: 8px;
-    font-weight: bold;
-}
-
-.footer-group a {
-    display: block;
-    color: white !important;
-    text-decoration: none;
-    margin-bottom: 6px;
-    opacity: 0.8;
-    font-size: 14px;
-}
-
-/* --- BOTÓN WHATSAPP NARANJA --- */
-.footer-cta {
-    margin: 15px 0;
-}
-
-.btn-wa-naranja {
-    background-color: #ffb35c !important;
-    color: white !important;
-    padding: 12px 35px;
-    border-radius: 12px;
-    text-decoration: none !important;
-    font-weight: bold;
-    font-size: 16px;
-    display: inline-block;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    transition: transform 0.2s;
-}
-
-.btn-wa-naranja:hover {
-    transform: scale(1.05);
-}
-
-/* Línea final de Copyright */
-.footer-copy {
-    margin-top: 20px;
-    padding-top: 15px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    font-size: 13px;
-    opacity: 0.7;
-    width: 100%;
 }
