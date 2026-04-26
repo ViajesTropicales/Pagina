@@ -45,6 +45,8 @@
     .info-texto { width: 100% !important; }
     .itinerario h2 {font-size: 1.5rem !important;}
 
+    /* --- QUIENES SOMOS --- */
+    .quienes-main { padding: 20px 5% 30px !important;}
     /* --- TEXTOS --- */
     h1 { font-size: 1.8rem !important; }
     h2 { font-size: 1.1rem !important; }
@@ -53,7 +55,7 @@
     .banner-content p { font-size: 1.3rem !important; }
     .ruta-detalles h2 { font-size: 1.4rem !important; }
     .dia-info p { font-size: 0.8rem !important; }
-    
+
     /* --- BOTONES --- */
     .hero-buttons,
     .banner-content { display: flex; flex-direction: column; gap: 15px; padding: 0 10px; }
