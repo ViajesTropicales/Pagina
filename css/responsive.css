@@ -43,6 +43,7 @@
     .resena-card { width: 90% !important; max-width: 400px !important; margin: 0 auto !important; }
     .dia-card { width: 90% !important; max-width: 400px !important; margin: 0 auto !important; text-align: left !important;}
     .info-texto { width: 100% !important; }
+    .itinerario h2 {font-size: 1.5rem !important;}
 
     /* --- TEXTOS --- */
     h1 { font-size: 1.8rem !important; }
