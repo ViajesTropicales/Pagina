@@ -1,15 +1,12 @@
-const menu = document.querySelector('#btn-menu');
-const menuLinks = document.querySelector('.navbar ul');
+const menu = document.querySelector('#mobile-menu');
+const menuLinks = document.querySelector('.nav-list');
 
 menu.addEventListener('click', function() {
-    menu.classList.toggle('is-active');
     menuLinks.classList.toggle('active');
 });
 
-
-document.querySelectorAll('.navbar ul li a').forEach(link => {
+document.querySelectorAll('.nav-list li a').forEach(link => {
     link.addEventListener('click', () => {
-        menu.classList.remove('is-active');
         menuLinks.classList.remove('active');
     });
 });
