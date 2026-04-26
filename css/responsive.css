@@ -41,7 +41,7 @@
     .card-body { padding: 15px !important; overflow: visible !important; }
     .test-card { width: 85% !important; max-width: 350px !important; margin: 0 auto !important; }
     .resena-card { width: 90% !important; max-width: 400px !important; margin: 0 auto !important; }
-    .dia-card { width: 90% !important; max-width: 400px !important; margin: 0 auto !important; }
+    .dia-card { width: 90% !important; max-width: 400px !important; margin: 0 auto !important; text-align: left !important;}
     .info-texto { width: 100% !important; }
 
     /* --- TEXTOS --- */
