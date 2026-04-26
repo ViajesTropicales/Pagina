@@ -1,10 +1,15 @@
-const menu = document.querySelector('#mobile-menu'); const menuLinks =
-document.querySelector('.nav-list'); 
-// Función para abrir/cerrar al dar al botón
+const menu = document.querySelector('#mobile-menu');
+const menuLinks = document.querySelector('.nav-list');
+
 menu.addEventListener('click', function() {
-menu.classList.toggle('is-active');
-menuLinks.classList.toggle('active'); }); 
-// Función EXTRA: Cerrar elmenú al hacer clic en un enlace 
-document.querySelectorAll('.nav-listli a').forEach(link => { link.addEventListener('click', () => {
-menu.classList.remove('is-active');
-menuLinks.classList.remove('active'); }); });
+    menu.classList.toggle('is-active');
+    menuLinks.classList.toggle('active');
+});
+
+// ✅ Espacio entre .nav-list y li
+document.querySelectorAll('.nav-list li a').forEach(link => {
+    link.addEventListener('click', () => {
+        menu.classList.remove('is-active');
+        menuLinks.classList.remove('active');
+    });
+});
