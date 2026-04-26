@@ -47,6 +47,11 @@
 
     /* --- QUIENES SOMOS --- */
     .quienes-main { padding: 20px 5% 30px !important;}
+    /* ESPACIO CON EL BANNER DE ARRIBA*/
+    .legal-section { padding-top: 100px !important; }
+    /* SUBIR TITULO POR PADDING*/
+    .rutas-hero { padding-top: 100px !important;}
+
     /* --- TEXTOS --- */
     h1 { font-size: 1.8rem !important; }
     h2 { font-size: 1.1rem !important; }
