@@ -13,7 +13,9 @@
 
     /* --- CONTENEDORES EN COLUMNA --- */
     .testimonials-container { gap: 15px !important;}
-    .footer-grid { gap: 18px !important; padding: 25px 5% !important;}
+    .footer-grid { display: flex !important; flex-direction: column !important;
+    align-items: center !important;text-align: center !important;
+    gap: 18px !important; padding: 25px 5% !important;}
     .ruta-detalles-inner,
     .itinerario-container,
     .resenas-grid {
