@@ -17,10 +17,13 @@
     align-items: center !important;text-align: center !important;
     gap: 18px !important; padding: 25px 5% !important;}
     .ruta-detalles-inner,
-    .itinerario-container,
     .resenas-grid {
         display: flex !important; flex-direction: column !important; align-items: center !important;
         text-align: center !important; gap: 30px !important; padding: 30px 5% !important; width: 100% !important;
+    }
+    .itinerario-container {
+        display: flex !important; flex-direction: column !important; align-items: stretch !important;
+        gap: 15px !important; padding: 0 5% !important; width: 100% !important;
     }
     .hero {
     width: 100% !important; 
@@ -48,8 +51,11 @@
     .card-body { padding: 15px !important; overflow: visible !important; }
     .test-card { padding: 20px !important; }
     .resena-card { width: 90% !important; max-width: 400px !important; margin: 0 auto !important; }
-    .dia-card { width: 90% !important; max-width: 400px !important; margin: 0 auto !important; text-align: left !important;}
-    .info-texto { width: 100% !important; }
+    .dia-card { width: 90% !important; max-width: 400px !important; margin: 0 auto !important; text-align: left !important; flex-direction: column !important; }
+    .dia-info { width: 100% !important; text-align: left !important; }
+    .tags { justify-content: flex-start !important; }
+    .info-texto { padding: 0 5% !important; }
+    .info-texto p { font-size: 0.8rem !important; }
     .itinerario h2 {font-size: 1.5rem !important;}
 
     /* --- QUIENES SOMOS --- */
@@ -75,6 +81,9 @@
     .ruta-detalles h2 { font-size: 1.4rem !important; }
     .dia-info p { font-size: 0.8rem !important; }
 
+        /* --- BANNER RUTA --- */
+    .banner-ruta { width: 100% !important; margin: 0 !important; left: 0 !important; position: relative !important;}
+
     /* --- BOTONES --- */
     .hero-buttons,
     .banner-content { display: flex; flex-direction: column; gap: 15px; padding: 0 10px; }
@@ -98,7 +107,7 @@
 
     /* --- TABLA DE PRECIOS --- */
 .tabla-precios { 
-    width: 100% !important; 
+    width: 120% !important; 
     padding: 20px !important; 
     box-sizing: border-box !important;
 }
