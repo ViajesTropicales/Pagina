@@ -27,7 +27,7 @@
         padding: 20px 5% !important;
     }
     .dia-card { width: 100% !important; max-width: 100% !important; text-align: left !important; }
-
+    .legal-section { padding-top: 120px !important; }
     /* --- FOOTER EN COLUMNA --- */
     .footer-grid { display: flex !important; flex-direction: column !important;
         align-items: center !important; text-align: center !important;

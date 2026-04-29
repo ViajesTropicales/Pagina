@@ -53,10 +53,14 @@ body {font-family: 'Poppins', sans-serif; color: #fff; line-height: 1.6; overflo
 .btn-white {display: inline-block; background: white; color: #333; padding: 15px 30px;border-radius: 8px; text-decoration: none; margin-top: 25px;font-weight: 600;}
 /* --- FOOTER --- */
 .footer { background: #1a365d; color: white; padding: 60px 10% 20px; }
-.footer-grid {display: flex;justify-content: space-between; align-items: flex-start; gap: 30px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 40px;}
+.footer-grid {    display: flex !important; 
+    flex-direction: column !important;
+    align-items: center !important; 
+    text-align: center !important;gap: 18px !important;padding: 25px 5% !important;
+    justify-content: center !important;}
 .footer-info p { font-size: 12px; opacity: 0.8; line-height: 1.6; }
 .footer-info h3 { font-size: 16px; margin-bottom: 8px; }
-.footer-grid .footer-links:last-child { align-self: flex-end; }
+.footer-links:last-child { align-self: flex-end; }
 .footer-links h4 { font-size: 16px; margin-bottom: 15px; font-weight: bold; }
 .footer-links a { display: block; color: rgba(255,255,255,0.8); text-decoration: none; margin-bottom: 10px; font-size: 14px; }
 .footer-bottom { margin-top: 20px; font-size: 13px; opacity: 0.7; text-align: center; }
