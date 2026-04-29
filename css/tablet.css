@@ -2,7 +2,7 @@
 
     /* --- MENÚ HAMBURGUESA --- */
     .navbar ul { display: none !important; }
-    .menu-toggle { display: block !important; cursor: pointer; padding: 10px; }
+    .menu-toggle { display: block !important; cursor: pointer; padding: 10px;  margin-left: auto !important;}
     .menu-toggle.is-active .bar:nth-child(2) { opacity: 0; }
     .menu-toggle.is-active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
     .menu-toggle.is-active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
