@@ -32,6 +32,9 @@
     .footer-grid { display: flex !important; flex-direction: column !important;
         align-items: center !important; text-align: center !important;
         gap: 18px !important; padding: 25px 5% !important; }
-    .footer-info,
-    .footer-links { margin-bottom: 8px !important; }
+    .footer-info p {font-size: 1.2rem !important;}
+    .footer-links a { margin-bottom: 8px !important; font-size: 1.2rem !important; }
+    .footer-bottom p { font-size: 0.98rem !important; }
+    .footer-links h4 { font-size: 1.2rem !important; }
+    .footer-info h3 { font-size: 1.3rem !important; }
 }
