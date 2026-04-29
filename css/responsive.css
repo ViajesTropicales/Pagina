@@ -83,4 +83,25 @@
     .footer-info,
     .footer-links { margin-bottom: 8px !important; }
     .footer .btn-secondary { display: block !important; width: 90% !important; max-width: 280px; margin: 20px auto 0 !important; }
+
+    /* --- TAMAÑOS DE LETRA MÓVIL --- */
+    body { font-size: 0.9rem !important; }
+    .faq-item summary { font-size: 0.95rem !important; }
+    .faq-item p { font-size: 0.85rem !important; }
+    .subtitle { font-size: 0.95rem !important; }
+    .blog-intro { font-size: 0.95rem !important; }
+    .blog-item-texto p { font-size: 0.9rem !important; }
+    .footer-info p { font-size: 0.85rem !important; }
+    .footer-links a { font-size: 0.85rem !important; }
+    .test-card p { font-size: 0.85rem !important; }
+    .test-card strong { font-size: 0.85rem !important; }
+
+    /* --- TABLA DE PRECIOS --- */
+.tabla-precios { 
+    width: 100% !important; 
+    padding: 20px !important; 
+    box-sizing: border-box !important;
+}
+.precio-fila { font-size: 0.9rem !important; }
+.precio-fila strong { font-size: 1rem !important; }
 }
