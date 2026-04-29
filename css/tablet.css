@@ -19,6 +19,14 @@
     .banner-content h1 { font-size: 3rem !important; }
     .banner-content p { font-size: 1.7rem !important; }
 
+        /* --- HERO --- */
+    .hero { height: 60vh !important; }
+    .hero-content h1 { font-size: 2.5rem !important; }
+    .hero-content p { font-size: 1.2rem !important; }
+
+    /* --- IMAGEN TARJETAS--- */
+    .card img { height: 200px !important; object-fit: cover !important; }
+
     /* --- ITINERARIO 2 EN 2 --- */
     .itinerario-container {
         display: grid !important;
