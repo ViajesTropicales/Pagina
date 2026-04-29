@@ -91,6 +91,9 @@ details p {
 }
 
 .faq-cta p { color: #666; font-size: 14px; margin-bottom: 20px; }
+summary { font-size: 1.5rem !important; }
+details p { font-size: 1.2rem !important; }
+.faq-hero p { font-size: 1.2rem !important; }
 
 .btn-faq {
     display: inline-block;
