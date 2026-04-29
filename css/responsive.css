@@ -20,6 +20,11 @@
         display: flex !important; flex-direction: column !important; align-items: center !important;
         text-align: center !important; gap: 30px !important; padding: 30px 5% !important; width: 100% !important;
     }
+    .hero {
+    width: 100% !important; 
+    margin: 0 !important; 
+    border-radius: 0 !important;         
+    }
 
     /* --- MENÚ HAMBURGUESA --- */
     .menu-toggle { display: block !important; cursor: pointer; padding: 10px; }
