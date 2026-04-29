@@ -12,8 +12,8 @@
     .stat-item { flex: 1 1 45% !important; margin-bottom: 30px; }
 
     /* --- CONTENEDORES EN COLUMNA --- */
-    .testimonials-container {gap: 15px !important;}
-    .footer-grid {gap: 10px !important; padding: 20px 5% !important;},
+    .testimonials-container,
+    .footer-grid,
     .ruta-detalles-inner,
     .itinerario-container,
     .resenas-grid {
@@ -74,6 +74,6 @@
 
     /* --- FOOTER --- */
     .footer-info,
-    .footer-links { margin-bottom: 5px !important; }
+    .footer-links { width: 100% !important; margin-bottom: 20px; }
     .footer .btn-secondary { display: block !important; width: 90% !important; max-width: 280px; margin: 20px auto 0 !important; }
 }
