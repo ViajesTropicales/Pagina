@@ -11,6 +11,8 @@
         background-color: #ffffff; text-align: center; padding: 20px 0;
         box-shadow: 0 10px 20px rgba(0,0,0,0.1); z-index: 1000; }
     .nav-list.active { display: flex !important; }
+    /* --- MENÚ --- */
+    .nav-list li a { font-size: 1.2rem !important; }
 
     /* --- TEXTOS MÁS GRANDES --- */
     body { font-size: 1.1rem !important; }
@@ -25,7 +27,29 @@
     .hero-content p { font-size: 1.2rem !important; }
 
     /* --- IMAGEN TARJETAS--- */
-    .card img { height: 200px !important; object-fit: cover !important; }
+    .card:nth-child(3) img { object-position: center bottom !important; }
+
+    .rutas-lista { padding: 0 2% !important; }
+    .cards-container { padding: 20px 2% !important; }
+    .card { flex: 1 1 280px !important; }
+
+        /* --- TESTIMONIOS --- */
+    .test-card p { font-size: 1rem !important; }
+    .test-card strong { font-size: 1rem !important; }
+
+    /* --- FAQ --- */
+    .faq-item summary { font-size: 1.3rem !important; }
+    .faq-item p { font-size: 1.2rem !important; }
+    .faq-hero h1 { font-size: 2.5rem !important; }
+    .faq-hero p { font-size: 1.1rem !important; }
+
+    /* --- BLOG --- */
+    .blog-preview p { font-size: 1.1rem !important; }
+    .btn-blog { font-size: 1.1rem !important; }
+    .blog-intro { font-size: 1.1rem !important; }
+    .blog-item-texto p { font-size: 1.13rem !important; }
+    .blog-item-texto h2 { font-size: 1.4rem !important; }
+
 
     /* --- ITINERARIO 2 EN 2 --- */
     .itinerario-container {
@@ -36,6 +60,7 @@
     }
     .dia-card { width: 100% !important; max-width: 100% !important; text-align: left !important; }
     .legal-section { padding-top: 120px !important; }
+
     /* --- FOOTER EN COLUMNA --- */
     .footer-grid { display: flex !important; flex-direction: column !important;
         align-items: center !important; text-align: center !important;
